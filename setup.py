@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="XMLWirelessWindows", # Replace with your own username
-    version="0.0.2",
-    author="@KudoKuro",
+    version="0.1.1",
+    author="@kudoKuro",
     author_email="nguyentranphucbao@gmail.com",
     description="Create, Edit and Change Infomation of XML File",
     long_description=long_description,
