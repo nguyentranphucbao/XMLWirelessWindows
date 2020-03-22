@@ -40,7 +40,7 @@ keywords = ['{ssid}', '{passwd}', '{authen}', '{encryp}']
 SpecialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '~', '`']
 
 from random import *
-from algorithms import replaces
+from .algorithms import replaces
 import os
 import sys
 sys.setrecursionlimit(1500)
@@ -90,6 +90,10 @@ class XML(object):
 
     def initFile(self):
         XML = replaces(XMLCode, keywords, ssid = self.ssid, passwd = self.passwd, authen= self.authen, encryp = self.encryp)
+        keywords[0] = self.ssid
+        keywords[1] = self.passwd
+        keywords[2] = self.authen
+        keywords[3] = self.encryp
         namefile = ""
         for i in range(4):
             namefile += char[randrange(0, 52)]
