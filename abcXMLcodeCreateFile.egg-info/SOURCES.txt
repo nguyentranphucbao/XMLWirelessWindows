@@ -1,0 +1,6 @@
+README.md
+setup.py
+abcXMLcodeCreateFile.egg-info/PKG-INFO
+abcXMLcodeCreateFile.egg-info/SOURCES.txt
+abcXMLcodeCreateFile.egg-info/dependency_links.txt
+abcXMLcodeCreateFile.egg-info/top_level.txt
