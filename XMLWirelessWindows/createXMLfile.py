@@ -40,7 +40,7 @@ keywords = ['{ssid}', '{passwd}', '{authen}', '{encryp}']
 SpecialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '~', '`']
 
 from random import *
-from .algorithms import replaces
+from algorithms import replaces
 import os
 import sys
 sys.setrecursionlimit(1500)
@@ -51,7 +51,7 @@ class XML(object):
         self.passwd = passwd
         self.authen = authen
         self.encryp = encryp
-
+        self.path = ""
     @property
     def _ssid(self):
         return self.ssid 
@@ -84,12 +84,12 @@ class XML(object):
     def _encryp (self,value):
         self.encryp = value
 
+    @property
+    def _path(self):
+        return self.path
+
     def initFile(self):
         XML = replaces(XMLCode, keywords, ssid = self.ssid, passwd = self.passwd, authen= self.authen, encryp = self.encryp)
-        keywords[0] = self.ssid
-        keywords[1] = self.passwd
-        keywords[2] = self.authen
-        keywords[3] = self.encryp
         namefile = ""
         for i in range(4):
             namefile += char[randrange(0, 52)]
@@ -97,3 +97,7 @@ class XML(object):
             namefile += str(randrange(10))
         files = open(namefile + '.xml', 'w')
         files.write(XML)
+        self.path = namefile + '.xml'
+
+    def delFile(self):
+        os.system("del /F " + '"{}"'.format(self.path))
