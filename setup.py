@@ -3,14 +3,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="abcXMLcodeCreateFile", # Replace with your own username
+    name="XMLWirelessWindows", # Replace with your own username
     version="0.0.2",
-    author="Nguyen Tran Phuc Bao",
+    author="@KudoKuro",
     author_email="nguyentranphucbao@gmail.com",
     description="Create, Edit and Change Infomation of XML File",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/nguyentranphucbao/abcXMLcodeCreateFile",
+    url="https://github.com/nguyentranphucbao/XMLWirelessWindows",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
