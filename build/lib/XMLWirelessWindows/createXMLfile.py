@@ -40,7 +40,7 @@ keywords = ['{ssid}', '{passwd}', '{authen}', '{encryp}']
 SpecialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '~', '`']
 
 from random import *
-from algorithms import replaces
+from .algorithms import replaces
 import os
 import sys
 sys.setrecursionlimit(1500)
