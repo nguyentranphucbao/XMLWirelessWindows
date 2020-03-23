@@ -35,7 +35,7 @@ XMLCode = '''<?xml version="1.0"?>
 
 char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-keywords = ['{ssid}', '{passwd}', '{authen}', '{encryp}']
+keywords = ['{ssid}', '{passwd}', '{authen}', '{encryp}''',]
 
 SpecialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '~', '`']
 
@@ -90,10 +90,6 @@ class XML(object):
 
     def initFile(self):
         XML = replaces(XMLCode, keywords, ssid = self.ssid, passwd = self.passwd, authen= self.authen, encryp = self.encryp)
-        keywords[0] = self.ssid
-        keywords[1] = self.passwd
-        keywords[2] = self.authen
-        keywords[3] = self.encryp
         namefile = ""
         for i in range(4):
             namefile += char[randrange(0, 52)]
