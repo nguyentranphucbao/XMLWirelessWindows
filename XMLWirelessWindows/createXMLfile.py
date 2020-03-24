@@ -3,15 +3,12 @@ XMLCode = '''<?xml version="1.0"?>
 	<name>{ssid}</name>
 	<SSIDConfig>
 		<SSID>
+			<hex>4C494E484C494E48</hex>
 			<name>{ssid}</name>
 		</SSID>
 	</SSIDConfig>
-	<connectionType>
-		ESS
-	</connectionType>
-	<connectionMode>
-		auto
-	</connectionMode>
+	<connectionType>ESS</connectionType>
+	<connectionMode>auto</connectionMode>
 	<MSM>
 		<security>
 			<authEncryption>
@@ -28,9 +25,10 @@ XMLCode = '''<?xml version="1.0"?>
 	</MSM>
 	<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3">
 		<enableRandomization>false</enableRandomization>
-		<randomizationSeed>3231738979</randomizationSeed>
+		<randomizationSeed>3242325799</randomizationSeed>
 	</MacRandomization>
 </WLANProfile>
+
 '''
 
 char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']

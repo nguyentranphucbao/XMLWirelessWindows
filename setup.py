@@ -1,14 +1,12 @@
 import setuptools
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 
 setuptools.setup(
     name="XMLWirelessWindows", # Replace with your own username
-    version="0.1.3.3",
+    version="0.1.3.4",
     author="@KudoKuro",
     author_email="nguyentranphucbao@gmail.com",
     description="Create, Edit and Change Infomation of XML File",
-    long_description=long_description,
+    long_description="XMLWirelessWindows",
     long_description_content_type="text/markdown",
     url="https://github.com/nguyentranphucbao/XMLWirelessWindows",
     packages=setuptools.find_packages(),
